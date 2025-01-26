@@ -1,0 +1,70 @@
+Google Search Results Scraper
+
+This project is a Python script that uses Selenium to scrape Google search results. It extracts titles, URLs, and descriptions from the first page of search results and displays them in the console.
+Features
+- Automates the process of performing a Google search.
+- Extracts:
+  - Titles of the search results.
+  - Links (URLs) of the search results.
+  - Descriptions/snippets from the search results.
+- Handles dynamic content loading using Selenium.
+
+Prerequisites
+Before running the script, install the following:
+1. Python 
+   Download from [https://www.python.org/downloads/](https://www.python.org/downloads/)
+2. Selenium 
+   Install Selenium using pip:
+      pip install selenium
+3. WebDriver
+   - Download the WebDriver for your browser:
+     - [ChromeDriver](https://chromedriver.chromium.org/downloads) (for Google Chrome)
+     - [GeckoDriver](https://github.com/mozilla/geckodriver/releases) (for Firefox)
+   - Ensure the WebDriver executable is in your system's PATH or specify the path in the script.
+
+Steps to run the script:
+1. Clone the repository:
+   git clone https://github.com/your-username/repository-name.git
+   cd repository-name
+2. Modify the Script
+    -Open the script file (`google_scraper.py`).
+    -Replace `"path/to/chromedriver"` with the actual path to your WebDriver.
+3. Run the Script
+    -Execute the script in your terminal:
+        python google_scraper.py
+    -Enter a search query when prompted, or modify the query in the script.
+
+Script Overview
+The script performs the following steps:
+1. Launches the browser using Selenium.
+2. Opens the Google homepage.
+3. Performs a search for the specified query.
+4. Scrapes titles, URLs, and descriptions from the first page of results.
+5. Displays the extracted data in the terminal.
+
+Output
+Result 1:
+Title: Selenium Python - Documentation
+Link: https://selenium-python.readthedocs.io/
+Description: Selenium Python bindings provide a convenient API to interact with web browsers.
+
+Result 2:
+Title: Python Tutorial - W3Schools
+Link: https://www.w3schools.com/python/
+Description: Learn Python with this easy-to-follow tutorial for beginners.
+
+Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+   git checkout -b your-branch-name
+3. Commit your changes and push to your branch:
+   git push origin your-branch-name
+4. Create a pull request.
+
+License
+This project is licensed under the [MIT License](LICENSE).
+
+References
+- [Selenium Documentation](https://www.selenium.dev/documentation/)
+- [Google ChromeDriver](https://chromedriver.chromium.org/)
